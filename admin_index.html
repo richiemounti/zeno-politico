@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="pop.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>POLITICO</title>
+        <style>
+             table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            border: 1px solid #ddd;
+            }
+
+            th, td {
+            text-align: left;
+            padding: 16px;
+            }
+
+            a {
+                float: right;
+            }
+
+            tr:nth-child(even) {
+            background-color:  rgb(139, 139, 139);
+            }
+             /* Set a style for all buttons */
+            button {
+            background-color: rgb(39, 95, 55);;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+            /* Extra styles for the cancel button */
+            .addbtn {
+            width: auto;
+            padding: 10px 18px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id='main'>
+            <ul>
+                <span  onclick="openNav()">&#9776; </span>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='#'>News</a></li>
+                <li><a href='#'>Contact</a></li>
+                <li><a href='#'>About</a></li>
+            </ul>
+            <div class="container">
+                <h1>POLITICAL PARTIES</h1>
+                <table>
+                    <tr>
+                        <th>Party</th>
+                    </tr>
+                    <tr>
+                        <td>ODM <a>&times;</a></td>
+                    </tr>
+                    <tr>
+                        <td>WIPER<a>&times;</a></td>
+                    </tr>
+                    <tr>
+                        <td>TNA<a>&times;</a></td>
+                    </tr>
+                </table>
+                <button type="button" class="addbtn"><a style="text-decoration:none" href="party_add.html">ADD NEW</a></button>
+            </div>
+            <div class="container">
+                <h2>GOVERNMENT POSTS</h2>
+                <table>
+                    <tr>
+                        <th>President</th>
+                    </tr>
+                    <tr>
+                        <td>Governor<a>&times;</a></td>
+                    </tr>
+                    <tr>
+                        <td>Senator<a>&times;</a></td>
+                    </tr>
+                    <tr>
+                        <td>MP<a>&times;</a></td>
+                    </tr>
+                </table>
+                <button type="button" class="addbtn"><a style="text-decoration:none" href="office_add.html">ADD NEW</a></button>
+            <div>
+        </div>
+    </body>
+</html>

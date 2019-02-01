@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="pop.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <title>POLITICO</title>
+        <style>
+            /* Style inputs with type="text", select elements and textareas */
+            input[type=text], select, textarea {
+            width: 100%; 
+            padding: 12px;  
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-top: 6px;
+            margin-bottom: 16px; 
+            resize: vertical;
+            }
+
+            input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+            background-color: #45a049;
+            }
+
+            .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id='mySidenav' class='sidenav'>
+             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+             <a href="#">Profile</a>
+             <a href="#">Party</a>
+             <a href="#">Posts</a>
+             <a href="#">Poll Center</a>
+        </div>
+        <div id='main'>
+            <ul>
+                <span  onclick="openNav()">&#9776; </span>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='#'>News</a></li>
+                <li><a href='#'>Contact</a></li>
+                <li><a href='#'>About</a></li>
+            </ul>
+
+            <div class="container">
+                <form action="#">
+
+                    <label for="fname">Full Names</label>
+                    <input type="text" id="fname" name="fullname" placeholder="Your name..">
+
+                    <label for="office">Office</label>
+                    <select id="office" name="office">
+                        <option value="president">President</option>
+                        <option value="governor">Governor</option>
+                        <option value="senator">Senator</option>
+                        <option value="mp">MP</option>
+                    </select>
+                    <label for="party">Party</label>
+                    <select id="party" name="party">
+                        <option value="odm">ODM</option>
+                        <option value="tna">TNA</option>
+                        <option value="wiper">WIPER</option>
+                        <option value="udp">UDP</option>
+                    </select>
+
+                    <input type="submit" value="Submit">
+
+                  </form>
+                </div>
+        </div>
+    </body>
+</html>
